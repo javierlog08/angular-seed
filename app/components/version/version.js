@@ -1,8 +1,18 @@
-'use strict';
+define([
+  'angular',
+  './interpolate-filter', // Do we include filter here
+  './version-directive'   // Do we include directive here
+],function(angular){
 
-angular.module('myApp.version', [
-  'myApp.version.interpolate-filter',
-  'myApp.version.version-directive'
-])
+  'use strict';
 
-.value('version', '0.1');
+  return angular.module('myApp.version', [
+    'myApp.version.interpolate-filter',
+    'myApp.version.version-directive'
+  ])
+
+  .value('version', '0.1');
+
+});
+
+
