@@ -10,9 +10,9 @@ define(['angular'],function(angular){
     });
   }])
 
-  .controller('View1Ctrl', [function() {
-
-  }]);
+  .controller('View1Ctrl', function($scope) {
+      $scope.hello = "Hola mundo";
+  });
 });
 
 

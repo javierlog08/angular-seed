@@ -1,7 +1,7 @@
 define([
   'angular',
-  './interpolate-filter', // Do we include filter here
-  './version-directive'   // Do we include directive here
+  './interpolate-filter.js', // Do we include filter here
+  './version-directive.js'   // Do we include directive here
 ],function(angular){
 
   'use strict';
